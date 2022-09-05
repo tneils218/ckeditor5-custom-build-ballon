@@ -7,7 +7,6 @@ import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat.js';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 import BlockToolbar from '@ckeditor/ckeditor5-ui/src/toolbar/block/blocktoolbar.js';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
-import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices.js';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading.js';
 import Image from '@ckeditor/ckeditor5-image/src/image.js';
@@ -35,7 +34,6 @@ Editor.builtinPlugins = [
 	BlockQuote,
 	BlockToolbar,
 	Bold,
-	CloudServices,
 	Essentials,
 	Heading,
 	Image,
@@ -70,8 +68,8 @@ Editor.defaultConfig = {
 	blockToolbar: [
 		'heading',
 		'|',
-		'blockQuote',
 		'imageUpload',
+		'blockQuote',
 		'mediaEmbed',
 		'insertTable',
 		'|',
